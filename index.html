@@ -77,6 +77,28 @@
       .formulario input[type="submit"]:hover {
         background-color: #45a049;
       }
+      @media only screen and (max-width: 600px) {
+        /* Para pantallas pequeñas (teléfonos), ajustamos el botón y formulario */
+        .btn-registrarse {
+          top: 5px;
+          left: 5px;
+          padding: 8px 15px;
+          font-size: 14px;
+        }
+
+        .formulario {
+          width: 90%; /* Usar el 90% del ancho de la pantalla */
+          left: 5%; /* Centrar */
+          top: 60px; /* Ajustar la posición superior */
+        }
+
+        .formulario input[type="text"],
+        .formulario input[type="email"],
+        .formulario input[type="password"],
+        .formulario input[type="submit"] {
+          font-size: 16px; /* Agrandar el texto para ser más legible en pantallas pequeñas */
+        }
+      }
 
       </style>
       </head>
